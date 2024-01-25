@@ -141,7 +141,21 @@ main{
 }
 
 
+.sponsors{
+    text-align: center;
+}
 
+.sponsors-img-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img-container img{
+    width: 165px;
+}
 
 
 
@@ -154,7 +168,8 @@ main{
     header{
         padding: 20px;
     }    
-    nav{
+    nav, .facts-card-container,
+    .sponsors-img-container{
         flex-direction: column;
     }
     .banner img{
@@ -167,8 +182,11 @@ main{
     .team-pic-container{
         grid-template-columns: 1fr;
     }
-    .teams-content{
+    .teams-content, .facts-card-container{
         padding: 0px 30px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
 }
 
@@ -178,7 +196,9 @@ main{
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, 
+    .teams-container,
+    .sponsors-img-container{
         flex-direction: column;
     }
     
